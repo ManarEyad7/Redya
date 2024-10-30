@@ -1,7 +1,6 @@
 <div align="center">
     <img src="static/images/Banner1.png" alt="Banner" />
   <img src="static/images/RedyaLogo.png" alt="Redya Logo" width="200"/>
-        <img src="static/images/Banner1.png" alt="Banner" />
 
 </div>
 
