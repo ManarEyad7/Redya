@@ -19,8 +19,8 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/arabic-poetry-model.git
-   cd arabic-poetry-model
+   git clone (https://github.com/ManarEyad7/Redya).git
+   cd Redya
    ```
 
 2. Install the required dependencies:
