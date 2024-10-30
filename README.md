@@ -1,5 +1,5 @@
 # Redya
-![Redya Logo](Redya/static/images/RedyaLogo.png)
+![Redya Logo](static/images/RedyaLogo.png)
 
 # Arabic Poetry Model
 
