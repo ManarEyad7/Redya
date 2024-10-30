@@ -1,5 +1,7 @@
 # Redya
-<img src="static/images/RedyaLogo.png" alt="Redya Logo" width="200"/>
+<div align="center">
+  <img src="static/images/RedyaLogo.png" alt="Redya Logo" width="200"/>
+</div>
 
 # Arabic Poetry Model
 
