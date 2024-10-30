@@ -56,3 +56,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For any inquiries, please contact [renoalomari1100@gmail.com].
+
+<div align="center">
+    <img src="static/images/Banner1.png" alt="Banner" />
+</div>
