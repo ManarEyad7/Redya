@@ -1,4 +1,6 @@
 # Redya
+![Redya Logo](Redya/static/images/Redya%20Logo.png)
+
 # Arabic Poetry Model
 
 ## Overview
