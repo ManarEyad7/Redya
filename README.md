@@ -1,4 +1,4 @@
-[![Colab Notebook](https://colab.research.google.com/drive/1Ko1I7NjmW1cLwQOfWEO75Sn1FSwxV5zq?usp=sharing)
+[![Colab Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ko1I7NjmW1cLwQOfWEO75Sn1FSwxV5zq?usp=sharing)
 
 <div align="center">
     <img src="static/images/Banner1.png" alt="Banner" />
