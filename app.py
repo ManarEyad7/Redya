@@ -53,21 +53,10 @@ def validate_poetry(analysis_result):
 def analyze_poetry(analysis_model, baits):
     return analysis_model.analyze(baits, override_tashkeel=True)
 
-# Arabic dictionary for number of verses
-baits_dict = {
-    1: "بيتا واحد",
-    2: "بيتان اثنان",
-    3: "ثلاثة أبيات",
-    4: "أربعة أبيات",
-    5: "خمسة أبيات",
-    # يمكن إضافة المزيد حسب الحاجة
-}
 
 # Generate prompt for Watsonx model
 def create_allam_prompt(user_input, analysis_result, baits_count):
     # Use the dictionary to get the Arabic equivalent of the verse count
-    baits_count_arabic = baits_dict.get(baits_count, f"{baits_count} أبيات")  # Default if count is not in the dictionary
-    print(baits_count_arabic)
     prompt_input = f"""<<SYS>>
     أنت شاعر متمرس في فن المحاورة الشعرية. عند تلقيك لأبيات شعرية من المستخدم، يجب عليك:
     1. الرد بنفس القافية المستخدمة في الأبيات المدخلة ({analysis_result['qafiyah']}) .
