@@ -1,4 +1,4 @@
-    [![Colab Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gBHidEO7xLpo7waL7V7wkoj85seCH12g?usp=sharing)
+[![Colab Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gBHidEO7xLpo7waL7V7wkoj85seCH12g?usp=sharing)
 [![Huggingface Space](https://img.shields.io/badge/Demo%20-yellow.svg)](https://drive.google.com/file/d/1nunDYQrX2UESnLDVANJ1gOzm-Nw3_Icz/view?usp=sharing)
 
 <div align="center">
