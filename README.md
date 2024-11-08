@@ -1,4 +1,4 @@
-[![Colab Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gBHidEO7xLpo7waL7V7wkoj85seCH12g?usp=sharing)
+    [![Colab Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gBHidEO7xLpo7waL7V7wkoj85seCH12g?usp=sharing)
 [![Huggingface Space](https://img.shields.io/badge/Demo%20-yellow.svg)](https://drive.google.com/file/d/1nunDYQrX2UESnLDVANJ1gOzm-Nw3_Icz/view?usp=sharing)
 
 <div align="center">
@@ -56,6 +56,15 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - Thanks to the contributors and the community for their support.
 - Special thanks to the developers and researchers at SADAIA who laid the groundwork for natural language processing in Arabic.
+## Rferences 
+@article{alyafeai2023ashaar,
+  title={Ashaar: Automatic Analysis and Generation of Arabic Poetry Using Deep Learning Approaches},
+  author={Alyafeai, Zaid and Al-Shaibani, Maged S and Ahmed, Moataz},
+  journal={arXiv preprint arXiv:2307.06218},
+  year={2023}
+}
+
+Bari, M. S., †, Alnumay, Y., †, & National Center for AI (NCAI), Saudi Data and AI Authority (SDAIA). (2024). ALLAM: Large Language Models for Arabic and English [Journal-article]. arXiv. https://doi.org/10.2407/15390
 
 ## Contact
 
