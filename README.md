@@ -1,4 +1,5 @@
 [![Colab Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gBHidEO7xLpo7waL7V7wkoj85seCH12g?usp=sharing)
+[![Huggingface Space](https://img.shields.io/badge/Demo%20-yellow.svg)](Demo/Demo.mp4)
 
 <div align="center">
     <img src="static/images/Banner1.png" alt="Banner" />
