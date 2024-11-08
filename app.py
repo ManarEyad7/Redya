@@ -43,6 +43,12 @@ def baita():
 def get_analysis_model():
     return baita()
 
+# Validate if input is Arabic poetry
+def validate_poetry(analysis_result):
+    if analysis_result and analysis_result.get('meter') and analysis_result.get('qafiyah'):
+        return True
+    return False
+
 # Analyze poetry input using the cached analysis model
 def analyze_poetry(analysis_model, baits):
     return analysis_model.analyze(baits, override_tashkeel=True)
@@ -67,7 +73,7 @@ def create_allam_prompt(user_input, analysis_result, baits_count):
     1. الرد بنفس القافية المستخدمة في الأبيات المدخلة ({analysis_result['qafiyah']}) .
     2. الحفاظ على الوزن الشعري الخاص بالبحر المستخدم في الأبيات ({analysis_result['meter']}) .
     3. يجب أن يكون ردك يعكس نفس المعنى الموجودة في الأبيات الأساسية.
-    4. يجب ان يكون ردك مكون من {baits_count_arabic} فقط. 
+    4. يجب ان يكون ردك مكون من {baits_count} فقط. 
     <</SYS>>\n"""
     print(prompt_input)
     formatted_question = f"<s> [INST] {user_input} [/INST]"
@@ -95,6 +101,7 @@ def chat():
 
     # Split and count baits (verses)
     baits = question.split("\n")
+    print(baits)
     baits_count = len(baits)
     print("baits", baits_count)
 
@@ -102,14 +109,16 @@ def chat():
     analysis_model = get_analysis_model()
     watsonx_model = initialize_model()
 
-    # Analyze the baits
     analysis_result = analyze_poetry(analysis_model, baits)
-    print("analysis_result", analysis_result)
 
-    # Create Watsonx prompt
+    if not validate_poetry(analysis_result):
+        return jsonify({
+            'response': """أهلاً بك في رديّـة .. 
+لبدء المحاورة، يُرجى إدخال أبياتك الشعرية الأولى.
+من فضلك، افصل كل شطر بعلامة (#)، وضع كل بيت شعري في سطر."""
+        })
+
     allam_prompt = create_allam_prompt(question, analysis_result, baits_count)
-
-    # Generate response from Watsonx model
     generated_response = watsonx_model.generate_text(prompt=allam_prompt, guardrails=False)
 
     return jsonify({'response': generated_response})
@@ -118,3 +127,5 @@ if __name__ == "__main__":
     # Start background thread to load models when the app starts
     Thread(target=load_models_in_background).start()
     app.run(debug=False)
+
+
