@@ -10,7 +10,7 @@
 
 ## Overview
 
-This project features Allam a powerful genrative model devlpoed by SADAIA. we have refine Allam along whith secondd model called Ashaar to devlop agent that capeple to understand and generate Arabic poetry. It includes capabilities for analyzing rhyme schemes and rhythms, providing efficient real-time responses, and offers a user-friendly website for interaction.
+This project features Allam a powerful genrative model devlpoed by SADAIA. we have used Transfer learning technices by refining Allam along whith secondd model called Ashaar to devlop agent that capeple to understand and generate Arabic poetry. It includes capabilities for analyzing rhyme schemes and rhythms, providing efficient real-time responses, and offers a user-friendly website for interaction.
 
 ## Features
 
